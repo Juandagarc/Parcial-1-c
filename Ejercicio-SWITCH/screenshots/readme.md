@@ -2,4 +2,4 @@
 
 ## Ejercicio-SWITCH:
 
-![Alt text](<Captura de Pantalla 2023-09-17 a la(s) 12.20.23 a.m..png>)
+![Alt text](<Captura de Pantalla 2023-09-17 a la(s) 1.03.56 a.m..png>)

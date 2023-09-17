@@ -1,5 +1,57 @@
 # Enunciados:
+Realizar un programa que SOLAMENTE utilizando if, printf y scanf y realizando máximo 7 preguntas de si o no pueda adivinar en qué animal de una lista de 10 animales está pensando el usuario () sin preguntar directamente si es ese animal.
 
+Ejemplo 1:
+
+Por favor escoja un animal de esta lista para que el programa intente adivinarlo:<br>
+perro - pez<br>
+gato - gallina<br>
+caballo - pulpo<br>
+vaca - cangrejo<br>
+cerdo - aguila<br>
+
+¿Su animal tiene pelaje? Si<br>
+¿Su animal es consumido en Colombia? No<br>
+¿Su animal es carnívoro? Si<br>
+¿Su animal es comúnmente denominado "el mejor amigo del hombre"? Si<br>
+
+Su animal es el perro<br>
+
+Ejemplo 2:
+
+Por favor escoja un animal de esta lista para que el programa intente adivinarlo:<br>
+perro - pez<br>
+gato - gallina<br>
+caballo - pulpo<br>
+vaca - cangrejo<br>
+cerdo - aguila<br>
+
+¿Su animal es cuadrúpedo? No<br>
+¿Su animal es acuático? No<br>
+¿Su animal puede realizar vuelos largos? No<br>
+
+Su animal es la gallina<br>
+Realizar un programa que SOLAMENTE utilizando switch, printf y scanf muestre una palabra en español en color azul con la cantidad de letras que el usuario elija entre 4 y 10 que empiece con la vocal que el usuario decida (sin importar si la ingresa en mayúscula o minúscula), en caso de que el usuario ingrese una opción inválida muestre en rojo “opción inválida, ¿Desea intentar de nuevo?” Dando hasta 3 intentos.
+
+Ejemplo 1:
+
+Por favor escoja la cantidad de letras que tendrá su palabra: 7<br>
+Por favor escoja la letra inicial: B<br>
+Opción invalida, intente de nuevo (2): z<br>
+Opción invalida, intente de nuevo (1): A<br>
+
+Su palabra es: arbitro<br>
+
+Ejemplo 2:
+
+Por favor escoja la cantidad de letras que tendrá su palabra: 11<br>
+Opción invalida, intente de nuevo (2): 4<br>
+Por favor escoja la letra inicial: t<br>
+Opción invalida, intente de nuevo (1): z<br>
+
+Opción inválida.<br>
+
+Problemas while: <br>
 Realizar una carita feliz de varios colores utilizando el símbolo "■" (Alt + 254) como se muestra en el dibujo:<br>
 ■■■■■■■■■■■■■<br>
 ■■■■□□□□□■■■■<br>

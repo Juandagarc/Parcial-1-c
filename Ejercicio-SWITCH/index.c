@@ -2,6 +2,12 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+//Se define el color azul
+#define ANSI_COLOR_BLUE    "\x1b[34m"
+//Se define el color rojo
+#define ANSI_COLOR_RED     "\x1b[31m"
+//Se reinicia el color
+#define ANSI_COLOR_RESET   "\x1b[0m"
 
 int main (){
 
@@ -45,7 +51,7 @@ int main (){
 
         default:
             getchar();
-            printf("Opción invalida, intente de nuevo (%d)\n", intentos);
+            printf(ANSI_COLOR_RED "Opción invalida, intente de nuevo (%d)\n" ANSI_COLOR_RESET, intentos);
             printf("Por favor escoja la cantidad de letras que tendrá su palabra: \n");
             scanf("%d", &cantidadLetras);
             switch (cantidadLetras)
@@ -68,7 +74,7 @@ int main (){
                 default:
                     getchar();
                     intentos++;
-                    printf("Opción invalida, intente de nuevo (%d)\n", intentos);
+                    printf(ANSI_COLOR_RED "Opción invalida, intente de nuevo (%d)\n" ANSI_COLOR_RESET, intentos);
                     printf("Por favor escoja la cantidad de letras que tendrá su palabra: \n");
                     scanf("%d", &cantidadLetras);
                     switch (cantidadLetras)
@@ -91,7 +97,7 @@ int main (){
                         default:
                             getchar();
                             intentos++;
-                            printf("Opción invalida, Juego finalizado (%d).\n", intentos);
+                            printf(ANSI_COLOR_RED "Opción invalida, Juego finalizado (%d).\n" ANSI_COLOR_RESET, intentos);
                             exit(-1);
                             break;
                     }
@@ -117,42 +123,42 @@ int main (){
         switch (vocal)
         {
         case 'a':
-            printf("azul\n");
+            printf(ANSI_COLOR_BLUE "azul\n" ANSI_COLOR_RESET);
             break;
         case 'A':
-            printf("azul\n");
+            printf(ANSI_COLOR_BLUE "azul\n" ANSI_COLOR_RESET);
             break;
         default:
             getchar();
-            printf("Opción invalida, intente de nuevo (%d)\n", intentosVocal);
+            printf(ANSI_COLOR_RED "Opción invalida, intente de nuevo (%d)\n" ANSI_COLOR_RESET, intentosVocal);
             printf("Por favor escoja la letra inicial:\n");
             scanf("%c", &vocal);
             switch (vocal)
             {
             case 'a':
-                printf("azul\n");
+                printf(ANSI_COLOR_BLUE "azul\n" ANSI_COLOR_RESET);
                 break;
             case 'A':
-                printf("azul\n");
+                printf(ANSI_COLOR_BLUE "azul\n" ANSI_COLOR_RESET);
                 break;
             default:
                 getchar();
                 intentosVocal++;
-                printf("Opción invalida, intente de nuevo (%d)\n", intentosVocal);
+                printf(ANSI_COLOR_RED "Opción invalida, intente de nuevo (%d)\n" ANSI_COLOR_RESET, intentosVocal);
                 printf("Por favor escoja la letra inicial:\n");
                 scanf("%c", &vocal);
                 switch (vocal)
                 {
                 case 'a':
-                    printf("azul\n");
+                    printf(ANSI_COLOR_BLUE "azul\n" ANSI_COLOR_RESET);
                     break;
                 case 'A':
-                    printf("azul\n");
+                    printf(ANSI_COLOR_BLUE "azul\n" ANSI_COLOR_RESET);
                     break;
                 default:
                     getchar();
                     intentosVocal++;
-                    printf("Opción invalida, Juego finalizado (%d).\n", intentosVocal);
+                    printf(ANSI_COLOR_RED "Opción invalida, Juego finalizado (%d).\n" ANSI_COLOR_RESET, intentosVocal);
                     break;
                 }
                 break;
@@ -169,42 +175,42 @@ int main (){
         switch (vocal)
         {
         case 'e':
-            printf("enter\n");
+            printf(ANSI_COLOR_BLUE "enter\n" ANSI_COLOR_RESET);
             break;
         case 'E':
-            printf("enter\n");
+            printf(ANSI_COLOR_BLUE "enter\n" ANSI_COLOR_RESET);
             break;
         default:
             getchar();
-            printf("Opción invalida, intente de nuevo (%d)\n", intentosVocal);
+            printf(ANSI_COLOR_RED "Opción invalida, intente de nuevo (%d)\n" ANSI_COLOR_RESET, intentosVocal);
             printf("Por favor escoja la letra inicial:\n");
             scanf("%c", &vocal);
             switch (vocal)
             {
             case 'e':
-                printf("enter\n");
+                printf(ANSI_COLOR_BLUE "enter\n" ANSI_COLOR_RESET);
                 break;
             case 'E':
-                printf("enter\n");
+                printf(ANSI_COLOR_BLUE "enter\n" ANSI_COLOR_RESET);
                 break;
             default:
                 getchar();
                 intentosVocal++;
-                printf("Opción invalida, intente de nuevo (%d)\n", intentosVocal);
+                printf(ANSI_COLOR_RED "Opción invalida, intente de nuevo (%d)\n" ANSI_COLOR_RESET, intentosVocal);
                 printf("Por favor escoja la letra inicial:\n");
                 scanf("%c", &vocal);
                 switch (vocal)
                 {
                 case 'e':
-                    printf("enter\n");
+                    printf(ANSI_COLOR_BLUE "enter\n" ANSI_COLOR_RESET);
                     break;
                 case 'E':
-                    printf("enter\n");
+                    printf(ANSI_COLOR_BLUE "enter\n" ANSI_COLOR_RESET);
                     break;
                 default:
                     getchar();
                     intentosVocal++;
-                    printf("Opción invalida, Juego finalizado (%d).\n", intentosVocal);
+                    printf(ANSI_COLOR_RED "Opción invalida, Juego finalizado (%d).\n" ANSI_COLOR_RESET, intentosVocal);
                     break;
                 }
                 break;
@@ -221,42 +227,42 @@ int main (){
         switch (vocal)
         {
         case 'i':
-            printf("indice\n");
+            printf(ANSI_COLOR_BLUE "indice\n" ANSI_COLOR_RESET);
             break;
         case 'I':
-            printf("indice\n");
+            printf(ANSI_COLOR_BLUE "indice\n" ANSI_COLOR_RESET);
             break;
         default:
             getchar();
-            printf("Opción invalida, intente de nuevo (%d)\n", intentosVocal);
+            printf(ANSI_COLOR_RED "Opción invalida, intente de nuevo (%d)\n" ANSI_COLOR_RESET, intentosVocal);
             printf("Por favor escoja la letra inicial:\n");
             scanf("%c", &vocal);
             switch (vocal)
             {
             case 'i':
-                printf("indice\n");
+                printf(ANSI_COLOR_BLUE "indice\n" ANSI_COLOR_RESET);
                 break;
             case 'I':
-                printf("indice\n");
+                printf(ANSI_COLOR_BLUE "indice\n" ANSI_COLOR_RESET);
                 break;
             default:
                 getchar();
                 intentosVocal++;
-                printf("Opción invalida, intente de nuevo (%d)\n", intentosVocal);
+                printf(ANSI_COLOR_RED "Opción invalida, intente de nuevo (%d)\n" ANSI_COLOR_RESET, intentosVocal);
                 printf("Por favor escoja la letra inicial:\n");
                 scanf("%c", &vocal);
                 switch (vocal)
                 {
                 case 'i':
-                    printf("indice\n");
+                    printf(ANSI_COLOR_BLUE "indice\n" ANSI_COLOR_RESET);
                     break;
                 case 'I':
-                    printf("indice\n");
+                    printf(ANSI_COLOR_BLUE "indice\n" ANSI_COLOR_RESET);
                     break;
                 default:
                     getchar();
                     intentosVocal++;
-                    printf("Opción invalida, Juego finalizado (%d).\n", intentosVocal);
+                    printf(ANSI_COLOR_RED "Opción invalida, Juego finalizado (%d).\n" ANSI_COLOR_RESET, intentosVocal);
                     break;
                 }
                 break;
@@ -273,42 +279,42 @@ int main (){
         switch (vocal)
         {
         case 'i':
-            printf("indices\n");
+            printf(ANSI_COLOR_BLUE "indices\n" ANSI_COLOR_RESET);
             break;
         case 'I':
-            printf("indices\n");
+            printf(ANSI_COLOR_BLUE "indices\n" ANSI_COLOR_RESET);
             break;
         default:
             getchar();
-            printf("Opción invalida, intente de nuevo (%d)\n", intentosVocal);
+            printf(ANSI_COLOR_RED "Opción invalida, intente de nuevo (%d)\n" ANSI_COLOR_RESET, intentosVocal);
             printf("Por favor escoja la letra inicial:\n");
             scanf("%c", &vocal);
             switch (vocal)
             {
             case 'i':
-                printf("indices\n");
+                printf(ANSI_COLOR_BLUE "indices\n" ANSI_COLOR_RESET);
                 break;
             case 'I':
-                printf("indices\n");
+                printf(ANSI_COLOR_BLUE "indices\n" ANSI_COLOR_RESET);
                 break;
             default:
                 getchar();
                 intentosVocal++;
-                printf("Opción invalida, intente de nuevo (%d)\n", intentosVocal);
+                printf(ANSI_COLOR_RED "Opción invalida, intente de nuevo (%d)\n" ANSI_COLOR_RESET, intentosVocal);
                 printf("Por favor escoja la letra inicial:\n");
                 scanf("%c", &vocal);
                 switch (vocal)
                 {
                 case 'i':
-                    printf("indices\n");
+                    printf(ANSI_COLOR_BLUE "indices\n" ANSI_COLOR_RESET);
                     break;
                 case 'I':
-                    printf("indices\n");
+                    printf(ANSI_COLOR_BLUE "indices\n" ANSI_COLOR_RESET);
                     break;
                 default:
                     getchar();
                     intentosVocal++;
-                    printf("Opción invalida, Juego finalizado (%d).\n", intentosVocal);
+                    printf(ANSI_COLOR_RED "Opción invalida, Juego finalizado (%d).\n" ANSI_COLOR_RESET, intentosVocal);
                     break;
                 }
                 break;
@@ -325,42 +331,42 @@ int main (){
         switch (vocal)
         {
         case 'e':
-            printf("escapada\n");
+            printf(ANSI_COLOR_BLUE "escapada\n" ANSI_COLOR_RESET);
             break;
         case 'E':
-            printf("escapada\n");
+            printf(ANSI_COLOR_BLUE "escapada\n" ANSI_COLOR_RESET);
             break;
         default:
             getchar();
-            printf("Opción invalida, intente de nuevo (%d)\n", intentosVocal);
+            printf(ANSI_COLOR_RED "Opción invalida, intente de nuevo (%d)\n" ANSI_COLOR_RESET, intentosVocal);
             printf("Por favor escoja la letra inicial:\n");
             scanf("%c", &vocal);
             switch (vocal)
             {
             case 'e':
-                printf("escapada\n");
+                printf(ANSI_COLOR_BLUE "escapada\n" ANSI_COLOR_RESET);
                 break;
             case 'E':
-                printf("escapada\n");
+                printf(ANSI_COLOR_BLUE "escapada\n" ANSI_COLOR_RESET);
                 break;
             default:
                 getchar();
                 intentosVocal++;
-                printf("Opción invalida, intente de nuevo (%d)\n", intentosVocal);
+                printf(ANSI_COLOR_RED "Opción invalida, intente de nuevo (%d)\n" ANSI_COLOR_RESET, intentosVocal);
                 printf("Por favor escoja la letra inicial:\n");
                 scanf("%c", &vocal);
                 switch (vocal)
                 {
                 case 'e':
-                    printf("escapada\n");
+                    printf(ANSI_COLOR_BLUE "escapada\n" ANSI_COLOR_RESET);
                     break;
                 case 'E':
-                    printf("escapada\n");
+                    printf(ANSI_COLOR_BLUE "escapada\n" ANSI_COLOR_RESET);
                     break;
                 default:
                     getchar();
                     intentosVocal++;
-                    printf("Opción invalida, Juego finalizado (%d).\n", intentosVocal);
+                    printf(ANSI_COLOR_RED "Opción invalida, Juego finalizado (%d).\n" ANSI_COLOR_RESET, intentosVocal);
                     break;
                 }
                 break;
@@ -377,42 +383,42 @@ int main (){
         switch (vocal)
         {
         case 'a':
-            printf("aberturas\n");
+            printf(ANSI_COLOR_BLUE "aberturas\n" ANSI_COLOR_RESET);
             break;
         case 'A':
-            printf("aberturas\n");
+            printf(ANSI_COLOR_BLUE "aberturas\n" ANSI_COLOR_RESET);
             break;
         default:
             getchar();
-            printf("Opción invalida, intente de nuevo (%d)\n", intentosVocal);
+            printf(ANSI_COLOR_RED "Opción invalida, intente de nuevo (%d)\n" ANSI_COLOR_RESET, intentosVocal);
             printf("Por favor escoja la letra inicial:\n");
             scanf("%c", &vocal);
             switch (vocal)
             {
             case 'a':
-                printf("aberturas\n");
+                printf(ANSI_COLOR_BLUE "aberturas\n" ANSI_COLOR_RESET);
                 break;
             case 'A':
-                printf("aberturas\n");
+                printf(ANSI_COLOR_BLUE "aberturas\n" ANSI_COLOR_RESET);
                 break;
             default:
                 getchar();
                 intentosVocal++;
-                printf("Opción invalida, intente de nuevo (%d)\n", intentosVocal);
+                printf(ANSI_COLOR_RED "Opción invalida, intente de nuevo (%d)\n" ANSI_COLOR_RESET, intentosVocal);
                 printf("Por favor escoja la letra inicial:\n");
                 scanf("%c", &vocal);
                 switch (vocal)
                 {
                 case 'a':
-                    printf("aberturas\n");
+                    printf(ANSI_COLOR_BLUE "aberturas\n" ANSI_COLOR_RESET);
                     break;
                 case 'A':
-                    printf("aberturas\n");
+                    printf(ANSI_COLOR_BLUE "aberturas\n" ANSI_COLOR_RESET);
                     break;
                 default:
                     getchar();
                     intentosVocal++;
-                    printf("Opción invalida, Juego finalizado (%d).\n", intentosVocal);
+                    printf(ANSI_COLOR_RED "Opción invalida, Juego finalizado (%d).\n" ANSI_COLOR_RESET, intentosVocal);
                     break;
                 }
                 break;
@@ -429,42 +435,42 @@ int main (){
         switch (vocal)
         {
         case 'u':
-            printf("utensilios\n");
+            printf(ANSI_COLOR_BLUE "utensilios\n" ANSI_COLOR_RESET);
             break;
         case 'U':
-            printf("utensilios\n");
+            printf(ANSI_COLOR_BLUE "utensilios\n" ANSI_COLOR_RESET);
             break;
         default:
             getchar();
-            printf("Opción invalida, intente de nuevo (%d)\n", intentosVocal);
+            printf(ANSI_COLOR_RED "Opción invalida, intente de nuevo (%d)\n" ANSI_COLOR_RESET, intentosVocal);
             printf("Por favor escoja la letra inicial:\n");
             scanf("%c", &vocal);
             switch (vocal)
             {
             case 'u':
-                printf("utensilios\n");
+                printf(ANSI_COLOR_BLUE "utensilios\n" ANSI_COLOR_RESET);
                 break;
             case 'U':
-                printf("utensilios\n");
+                printf(ANSI_COLOR_BLUE "utensilios\n" ANSI_COLOR_RESET);
                 break;
             default:
                 getchar();
                 intentosVocal++;
-                printf("Opción invalida, intente de nuevo (%d)\n", intentosVocal);
+                printf(ANSI_COLOR_RED "Opción invalida, intente de nuevo (%d)\n" ANSI_COLOR_RESET, intentosVocal);
                 printf("Por favor escoja la letra inicial:\n");
                 scanf("%c", &vocal);
                 switch (vocal)
                 {
                 case 'u':
-                    printf("utensilios\n");
+                    printf(ANSI_COLOR_BLUE "utensilios\n" ANSI_COLOR_RESET);
                     break;
                 case 'U':
-                    printf("utensilios\n");
+                    printf(ANSI_COLOR_BLUE "utensilios\n" ANSI_COLOR_RESET);
                     break;
                 default:
                     getchar();
                     intentosVocal++;
-                    printf("Opción invalida, Juego finalizado (%d).\n", intentosVocal);
+                    printf(ANSI_COLOR_RED "Opción invalida, Juego finalizado (%d).\n" ANSI_COLOR_RESET, intentosVocal);
                     break;
                 }
                 break;
